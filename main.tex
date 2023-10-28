@@ -1,0 +1,35 @@
+\documentclass[12pt, UTF8, Chinese]{lecturenote}
+% \setmainfont{TeX Gyre Pagella}
+\date{}
+\title{}
+\input{./preamble}
+\coursename{}
+% This course name is a necessary metadata for this course.
+\courseteacher{}
+\coursenumber{}
+\institute{}
+\setmainfont{Palatino Linotype}
+\setmathfont{TeX Gyre Pagella Math}
+% \setCJKmainfont{Microsoft YaHei}
+\setCJKmainfont{WenQuanYi Micro Hei}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+% because ctex package will change it into Chinese
+% \renewcommand*\contentsname{Contents}
+\pagestyle{note}
+\begin{document}
+\phantomsection\addcontentsline{toc}{section}{封面}\tolerance=500
+% 将封面放进目录 Put Front Page into table of contents
+\maketitle
+% This is for page numbering in pdf document.
+% \setcounter{page}{2}
+\thispagestyle{ToC}
+\phantomsection\addcontentsline{toc}{section}{目录}\tolerance=500
+% 将目录页放进目录 Put content page into table of contents
+\tableofcontents
+\newpage
+% the newpage here is to split the table of content and the text.
+\pagestyle{note}
+% start lectures
+\include{lec01}
+% end lectures
+\end{document}
